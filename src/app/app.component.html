@@ -1,0 +1,15 @@
+<hello 
+(touch)="respond()" 
+name="{{ name }}" 
+[color]="color"
+></hello>
+<p>
+  {{response}}
+</p>
+<p>
+  {{color}}
+</p>
+ <p>
+  background color: {{color}}
+  </p>
+<change-bg (colorChange)="changeColor($event)"></change-bg>
